@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react"
 import { NavBar } from "./components/navbar/NavBar"
-import { SelectedPage } from "./components/navbar/shared/Types.ts";
+import { SelectedPage } from "./components/shared/Types.ts";
 import Home from "./components/Home/Home.tsx";
+import Benefits from "./components/benefits/Benefits.tsx";
+import OurClasses from "./components/OurClasses/OurClasses.tsx";
 
 
 
@@ -26,6 +28,8 @@ function App() {
     <div className='app bg-gray-20 flex flex-col'>
       <NavBar selectedPage={selectedPage} setSelectedPage={setSelectedPage} isTopOfPage = {isTopOfPage}/>
       <Home setSelectedPage={setSelectedPage}/>
+      <Benefits setSelectedPage={setSelectedPage}/>
+      <OurClasses setSelectedPage={setSelectedPage}/>
     </div>
   )
 }

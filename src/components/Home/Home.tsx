@@ -1,5 +1,5 @@
 import React from 'react'
-import { SelectedPage } from '../navbar/shared/Types'
+import { SelectedPage } from '../shared/Types'
 import useMediaQuery from '@/hooks/useMediaQuery'
 import HomePageText from "@/assets/images/HomePageText.png"
 import HomePageGraphic from "@/assets/images/HomePageGraphic.png"
@@ -88,7 +88,7 @@ const Home = ({setSelectedPage}: Props) => {
           </div>
         </div>
       )}
-    </section>
+    </section> 
   )
 }
 
